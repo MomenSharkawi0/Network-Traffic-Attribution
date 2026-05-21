@@ -14,6 +14,14 @@
   <img src="https://img.shields.io/badge/status-research-yellow.svg" alt="status">
 </p>
 
+<p align="center">
+  <a href="https://colab.research.google.com/github/MomenSharkawi0/Network-Traffic-Attribution/blob/main/notebooks/colab_demo.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+  </a>
+</p>
+
+> **Try it instantly — no install needed.** Click the *Open in Colab* badge above to clone the repo, install dependencies, load the bundled sample, and run the full pipeline (RF + XGBoost + MLP, metrics, plots) in your browser.
+
 ---
 
 ## Table of Contents

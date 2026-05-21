@@ -39,35 +39,35 @@ CONSOLAS = r"C:\Windows\Fonts\consola.ttf"
 
 
 # ---------- Palette -----------------------------------------------------------
-# Single source of truth for colors. Teal primary + amber accent + warm-gray text.
+# Black-and-white (monochrome) theme: only black, greys, and white.
 
 PALETTE = {
     # Headings
-    "h1_rgb":            (19, 78, 74),     # #134E4A dark teal
-    "h2_rgb":            (15, 118, 110),   # #0F766E teal
-    "h3_rgb":            (180, 83, 9),     # #B45309 amber
+    "h1_rgb":            (0, 0, 0),
+    "h2_rgb":            (20, 20, 20),
+    "h3_rgb":            (60, 60, 60),
     # Inline
-    "link_rgb":          (14, 116, 144),   # #0E7490 cyan
+    "link_rgb":          (40, 40, 40),
     # Tables
-    "tbl_header_fill":   "0F766E",        # teal
-    "tbl_header_hex":    "0F766E",
-    "tbl_header_rgb":    (15, 118, 110),
-    "tbl_zebra_fill":    "ECFEFF",        # very pale cyan
-    "tbl_zebra_rgb":     (236, 254, 255),
-    "tbl_border_hex":    "5EEAD4",        # soft teal
-    "tbl_border_rgb":    (94, 234, 212),
+    "tbl_header_fill":   "1A1A1A",
+    "tbl_header_hex":    "1A1A1A",
+    "tbl_header_rgb":    (26, 26, 26),
+    "tbl_zebra_fill":    "F2F2F2",
+    "tbl_zebra_rgb":     (242, 242, 242),
+    "tbl_border_hex":    "BFBFBF",
+    "tbl_border_rgb":    (191, 191, 191),
     # Misc
-    "quote_rgb":         (87, 83, 78),
-    "code_fill_rgb":     (252, 248, 234), # warm cream
-    "hr_rgb":            (180, 83, 9),    # amber rule
+    "quote_rgb":         (80, 80, 80),
+    "code_fill_rgb":     (240, 240, 240),
+    "hr_rgb":            (80, 80, 80),
     # Cover page
-    "cover_band_rgb":    (19, 78, 74),    # dark teal top band
-    "cover_band_b_rgb":  (180, 83, 9),    # amber bottom band
-    "cover_title_rgb":   (19, 78, 74),
-    "cover_subtitle_rgb":(15, 118, 110),
-    "cover_label_rgb":   (180, 83, 9),
-    "cover_value_rgb":   (40, 40, 40),
-    "cover_team_rgb":    (15, 118, 110),
+    "cover_band_rgb":    (0, 0, 0),
+    "cover_band_b_rgb":  (60, 60, 60),
+    "cover_title_rgb":   (0, 0, 0),
+    "cover_subtitle_rgb":(60, 60, 60),
+    "cover_label_rgb":   (60, 60, 60),
+    "cover_value_rgb":   (15, 15, 15),
+    "cover_team_rgb":    (20, 20, 20),
 }
 
 
@@ -402,7 +402,7 @@ def _build_docx_cover(doc, info: dict) -> None:
     band.paragraph_format.space_before = Pt(0)
     band.paragraph_format.space_after = Pt(24)
     band.add_run(" " * 4).font.size = Pt(14)
-    _add_paragraph_shading(band, "134E4A")
+    _add_paragraph_shading(band, "000000")
 
     # Vertical space, then big centered title
     for _ in range(3):
@@ -444,7 +444,7 @@ def _build_docx_cover(doc, info: dict) -> None:
         doc.add_paragraph()
     band = doc.add_paragraph()
     band.add_run(" " * 4).font.size = Pt(10)
-    _add_paragraph_shading(band, "B45309")
+    _add_paragraph_shading(band, "3C3C3C")
 
     # Page break to start body on a fresh page
     p = doc.add_paragraph()
