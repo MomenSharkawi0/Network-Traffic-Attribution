@@ -5,7 +5,6 @@
 | Submitted to | Dr. Hassan Ibrahim |
 | Course | Digital Forensics |
 | Date | 14 May 2026 |
-| Repository | <https://github.com/MomenSharkawi0/Network-Traffic-Attribution> |
 
 ## Project Team
 
