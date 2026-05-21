@@ -14,11 +14,13 @@
   <img src="https://img.shields.io/badge/status-research-yellow.svg" alt="status">
 </p>
 
-> **Run in Google Colab — no local setup needed.**
->
-> 1. Zip the project folder (`Network-Traffic-Attribution`) on your machine.
-> 2. In Colab: **File → Upload notebook** and pick `notebooks/colab_demo.ipynb`, then **Runtime → Run all**.
-> 3. The first cell will open a file picker — upload the project zip you made in step 1; the notebook extracts it automatically and runs the full pipeline (RF + XGBoost + MLP, metrics, plots).
+<p align="center">
+  <a href="https://colab.research.google.com/github/MomenSharkawi0/Network-Traffic-Attribution/blob/main/notebooks/colab_demo.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+  </a>
+</p>
+
+> **Try it instantly — no install needed.** Click the *Open in Colab* badge above; the notebook clones the repo, installs dependencies, loads the bundled sample, and runs the full pipeline (RF + XGBoost + MLP, metrics, plots) in your browser.
 
 ---
 
